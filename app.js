@@ -75,7 +75,7 @@ function handleContextMenu(event) {
   event.preventDefault();
 }
 
-function save() {
+function saveFile() {
   const image = canvas.toDataURL();
   const link = document.createElement("a");
   link.href = image;
@@ -105,5 +105,5 @@ if (mode) {
 }
 
 if (save) {
-  save.addEventListener("click", save);
+  save.addEventListener("click", saveFile);
 }
